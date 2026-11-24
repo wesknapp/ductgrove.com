@@ -1,129 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB" class="no-js">
 <head>
     <meta charset="UTF-8">
-    <title>Company Profile | Ductgrove Ltd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Ductgrove Limited - independent pipeline and pressure vessel engineering consultants.">
+    <title>Company Profile | Ductgrove Ltd — Independent Engineering Consultancy</title>
+    <meta name="description" content="About Ductgrove Limited: an independent engineering consultancy in Warrington, Cheshire specialising in pipeline systems, pressure equipment and industrial ducting.">
+    <meta property="og:title" content="Company Profile | Ductgrove Ltd">
+    <meta property="og:description" content="Independent pipeline and pressure systems engineering consultancy based in Warrington, Cheshire.">
+    <meta property="og:image" content="images/ductgrove-team.jpg">
+    <meta name="theme-color" content="#0b1d35">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
     <div class="container header-flex">
-        <a class="logo" href="index.html">
-            <img src="images/ductgrove-logo.svg" alt="Ductgrove Limited">
-        </a>
-        <nav>
+        <a class="logo" href="index.html"><img src="images/ductgrove-logo.svg" alt="Ductgrove Limited — home" width="117" height="54"></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="company-profile.html">Company Profile</a></li>
+                <li><a href="company-profile.html" aria-current="page">Company Profile</a></li>
                 <li><a href="services-detail.html">Services</a></li>
                 <li><a href="project-experience.html">Project Experience</a></li>
-                <li><a href="contact.html" class="btn">Contact</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
+<main id="main">
+
 <section class="hero hero-small">
     <div class="hero-overlay">
         <div class="container hero-content">
-            <h2>Company Profile</h2>
-            <p>About Ductgrove Limited</p>
+            <span class="eyebrow">Company profile</span>
+            <h1>About Ductgrove Limited</h1>
+            <p>Independent pipeline, pressure equipment and ducting engineering from Warrington, Cheshire.</p>
         </div>
     </div>
 </section>
 
 <section class="section">
-    <div class="container">
-        <h3>About Ductgrove Limited</h3>
-        <div style="max-width: 900px; margin: 30px auto;">
-            <p>
-                Ductgrove Limited is an independent engineering consultancy specialising in the analysis,
-                design, and assessment of pipeline systems, pressure equipment, and industrial ducting.
-                Based in Warrington, Cheshire, UK, we provide practical engineering solutions backed by
-                rigorous analysis and sound engineering judgement.
+    <div class="container split">
+        <div>
+            <span class="eyebrow">Who we are</span>
+            <h2>An independent engineering consultancy</h2>
+            <p class="lead">
+                Ductgrove Limited specialises in the analysis, design and assessment of pipeline systems,
+                pressure equipment and industrial ducting.
             </p>
             <p>
-                With expertise spanning dynamic and static analysis, support design, and regulatory compliance,
-                we serve clients across the energy, chemical, pharmaceutical, and general industrial sectors.
+                Based in Warrington, Cheshire, UK, we provide practical engineering solutions backed by
+                rigorous analysis and sound engineering judgement. With expertise spanning dynamic and static
+                analysis, support design and regulatory compliance, we serve clients across the energy, chemical,
+                pharmaceutical and general industrial sectors.
+            </p>
+            <p>
+                Clients can draw on senior engineering input and a collaborative approach to technical challenges.
+                We support both larger organisations and smaller businesses, with the scope shaped around the work required.
             </p>
         </div>
+        <figure class="split-media">
+            <img src="images/ductgrove-team.jpg" alt="Illustrative image of an engineering consultancy team in a modern office" width="1661" height="947">
+            <figcaption>Experience-led engineering support.</figcaption>
+        </figure>
     </div>
 </section>
 
 <section class="section section-alt">
     <div class="container">
-        <h3>Our Expertise</h3>
-        <div class="expertise-grid">
-            <div class="expertise-card">
-                <img src="images/wp8102cb8a_06.png" alt="Analysis icon" style="width: 60px; height: 60px; margin-bottom: 15px;">
-                <h4>Rigorous Analysis</h4>
-                <p>Comprehensive pipe stress analysis, FEA modelling, and pressure equipment assessment using industry-standard codes and standards.</p>
+        <div class="section-head">
+            <span class="eyebrow">Capabilities</span>
+            <h2>Our Expertise</h2>
+        </div>
+        <div class="card-grid">
+            <div class="tile">
+                <img src="images/wp8102cb8a_06.png" alt="" width="52" height="52">
+                <h3>Rigorous Analysis</h3>
+                <p>Pipe stress analysis, FEA modelling and pressure equipment assessment using industry-standard codes and standards.</p>
             </div>
-            <div class="expertise-card">
-                <img src="images/wp75881459_06.png" alt="Solutions icon" style="width: 60px; height: 60px; margin-bottom: 15px;">
-                <h4>Practical Solutions</h4>
-                <p>We deliver solutions that are not just technically sound, but practical, buildable, and defendable in the real world.</p>
+            <div class="tile">
+                <img src="images/wp75881459_06.png" alt="" width="52" height="52">
+                <h3>Practical Solutions</h3>
+                <p>Solutions that are not just technically sound, but practical, buildable and defendable in the real world.</p>
             </div>
-            <div class="expertise-card">
-                <img src="images/wp6c45ce94_06.png" alt="Compliance icon" style="width: 60px; height: 60px; margin-bottom: 15px;">
-                <h4>Regulatory Compliance</h4>
-                <p>Full support for PED (Pressure Equipment Directive), ASME, BS, and other regulatory frameworks to ensure compliance and safety.</p>
+            <div class="tile">
+                <img src="images/wp6c45ce94_06.png" alt="" width="52" height="52">
+                <h3>Regulatory Compliance</h3>
+                <p>Support for PED (Pressure Equipment Directive), ASME, BS and other regulatory frameworks to ensure compliance and safety.</p>
             </div>
-            <div class="expertise-card">
-                <img src="images/wp48d568ff_06.png" alt="Review icon" style="width: 60px; height: 60px; margin-bottom: 15px;">
-                <h4>Independent Review</h4>
+            <div class="tile">
+                <img src="images/wp48d568ff_06.png" alt="" width="52" height="52">
+                <h3>Independent Review</h3>
                 <p>Third-party verification and independent engineering assessment for critical piping and pressure systems.</p>
             </div>
-            <div class="expertise-card">
-                <img src="images/wpc84335d0_06.png" alt="Design icon" style="width: 60px; height: 60px; margin-bottom: 15px;">
-                <h4>Design Optimisation</h4>
-                <p>Specialist support in support design, spring sizing, bellows selection, and snubber specification for complex systems.</p>
+            <div class="tile">
+                <img src="images/wpc84335d0_06.png" alt="" width="52" height="52">
+                <h3>Design Optimisation</h3>
+                <p>Specialist support in support design, spring sizing, bellows selection and snubber specification for complex systems.</p>
             </div>
-            <div class="expertise-card">
-                <img src="images/wpac94267b_06.png" alt="Consultation icon" style="width: 60px; height: 60px; margin-bottom: 15px;">
-                <h4>Expert Consultation</h4>
-                <p>Direct access to senior engineers for technical advice, peer review, and specialist problem-solving on your projects.</p>
+            <div class="tile">
+                <img src="images/wpac94267b_06.png" alt="" width="52" height="52">
+                <h3>Expert Consultation</h3>
+                <p>Direct access to senior engineers for technical advice, peer review and specialist problem-solving on your projects.</p>
             </div>
         </div>
     </div>
 </section>
 
 <section class="section">
-    <div class="container">
-        <h3>Why Choose Ductgrove?</h3>
-        <div style="max-width: 900px; margin: 30px auto; line-height: 1.8;">
-            <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 15px;">✓ <strong>Independent Consultancy:</strong> Unbiased technical advice serving your project interests</li>
-                <li style="margin-bottom: 15px;">✓ <strong>Industry Experience:</strong> Deep expertise in complex piping and pressure system challenges</li>
-                <li style="margin-bottom: 15px;">✓ <strong>Regulatory Knowledge:</strong> Up-to-date with PED, ASME, BS and other compliance standards</li>
-                <li style="margin-bottom: 15px;">✓ <strong>Responsive Service:</strong> Direct access to experienced engineers, not layers of management</li>
-                <li style="margin-bottom: 15px;">✓ <strong>Plant Life Extension:</strong> Specialist support for extending operational life of industrial facilities</li>
+    <div class="container narrow">
+        <div class="section-head">
+            <span class="eyebrow">Why Ductgrove</span>
+            <h2>Why Choose Ductgrove?</h2>
+        </div>
+        <ul class="ticks">
+            <li><strong>Independent consultancy:</strong> unbiased technical advice serving your project's interests.</li>
+            <li><strong>Industry experience:</strong> deep expertise in complex piping and pressure system challenges.</li>
+            <li><strong>Regulatory knowledge:</strong> up to date with PED, ASME, BS and other compliance standards.</li>
+            <li><strong>Responsive service:</strong> direct access to experienced engineers, not layers of management.</li>
+            <li><strong>Plant life extension:</strong> specialist support for extending the operational life of industrial facilities.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="cta-band">
+    <div class="container cta-flex">
+        <div>
+            <h2>Discuss your project with us</h2>
+            <p>Whether it's a quick technical query or a major assessment, we're happy to talk it through.</p>
+        </div>
+        <div class="cta-contacts">
+            <a href="tel:+441925596116">01925 596116</a>
+            <a href="mailto:info@ductgrove.co.uk">info@ductgrove.co.uk</a>
+            <a href="contact.html" class="btn" style="margin-top:10px">Get in Touch</a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <img class="footer-logo" src="images/ductgrove-logo.svg" alt="Ductgrove Limited" width="100" height="46">
+            <p>Independent pipeline &amp; pressure systems engineering consultancy based in Warrington, Cheshire.</p>
+        </div>
+        <div>
+            <h2>Pages</h2>
+            <ul>
+                <li><a href="company-profile.html">Company Profile</a></li>
+                <li><a href="services-detail.html">Services</a></li>
+                <li><a href="project-experience.html">Project Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="tel:+441925596116">01925 596116</a></li>
+                <li><a href="mailto:info@ductgrove.co.uk">info@ductgrove.co.uk</a></li>
+                <li>Grove House, Kingswood,<br>Warrington, Cheshire, UK</li>
             </ul>
         </div>
     </div>
-</section>
-
-<section class="section section-alt">
-    <div class="container" style="text-align: center;">
-        <h3>Contact Us</h3>
-        <p style="margin: 20px 0;">
-            <strong>Email:</strong> <a href="mailto:info@ductgrove.co.uk" style="color: #2563eb;">info@ductgrove.co.uk</a>
-        </p>
-        <p>
-            <strong>Address:</strong> Grove House, Kingswood, Warrington, Cheshire, UK
-        </p>
-        <a href="contact.html" class="btn btn-primary" style="display: inline-block; margin-top: 15px;">Get in Touch</a>
-    </div>
-</section>
-
-<footer class="site-footer">
-    <div class="container">
-        <p>© Ductgrove Limited — Pipeline & Pressure Systems Engineering Consultancy</p>
-        <p style="font-size: 0.9rem; margin-top: 10px;">Warrington, Cheshire, UK | info@ductgrove.co.uk</p>
-    </div>
+    <div class="container footer-bottom">© <span id="year">2026</span> Ductgrove Limited. All rights reserved.</div>
 </footer>
 
 </body>
