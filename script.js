@@ -19,6 +19,48 @@
         });
     }
 
+    // Homepage header carousel: crossfade background photos
+    var carousel = document.querySelector('.hero-carousel');
+    if (carousel) {
+        var slides = carousel.querySelectorAll('.hero-slide');
+        var dots = carousel.querySelectorAll('.hero-dots button');
+        var current = 0;
+        var timer = null;
+        var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        var load = function (slide) {
+            var bg = slide.getAttribute('data-bg');
+            if (bg) {
+                slide.style.backgroundImage = "url('" + bg + "')";
+                slide.removeAttribute('data-bg');
+            }
+        };
+        var show = function (i) {
+            slides[current].classList.remove('is-active');
+            if (dots[current]) dots[current].removeAttribute('aria-current');
+            current = (i + slides.length) % slides.length;
+            load(slides[current]);
+            load(slides[(current + 1) % slides.length]); // preload the next one
+            slides[current].classList.add('is-active');
+            if (dots[current]) dots[current].setAttribute('aria-current', 'true');
+        };
+        var start = function () {
+            if (reduceMotion || slides.length < 2) return;
+            clearInterval(timer);
+            timer = setInterval(function () { show(current + 1); }, 6000);
+        };
+
+        Array.prototype.forEach.call(dots, function (dot, i) {
+            dot.addEventListener('click', function () { show(i); start(); });
+        });
+        // Load the second photo once the page has finished loading, then start
+        window.addEventListener('load', function () { if (slides[1]) load(slides[1]); start(); });
+        // Pause while the tab is hidden
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) clearInterval(timer); else start();
+        });
+    }
+
     // Current year in footer
     var year = document.getElementById('year');
     if (year) year.textContent = new Date().getFullYear();
